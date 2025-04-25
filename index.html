@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camping Nigeria - Outdoor Adventures in Nigeria</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <style>
+    :root {
+      --primary: #00c896;
+      --secondary: #009efd;
+      --accent: #ff6b6b;
+      --text: #2d3436;
+      --light: #f4f9f4;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 600px;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                  url('DDC-62.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--white);
+    }
+
+    .hero-content {
+      max-width: 800px;
+      padding: 2rem;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      color: var(--white);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--primary);
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .cta {
+      background: var(--secondary);
+      color: var(--white);
+      padding: 1rem 2.5rem;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+      font-weight: 600;
+    }
+
+    .cta:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .feature-card {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .feature-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+
+    .bonus-list, .deliverables-list {
+      list-style: none;
+      max-width: 600px;
+      margin: 2rem auto;
+    }
+
+    .bonus-list li, .deliverables-list li {
+      margin-bottom: 1rem;
+      padding-left: 2rem;
+      position: relative;
+    }
+
+    .bonus-list li:before, .deliverables-list li:before {
+      content: "✓";
+      color: var(--primary);
+      position: absolute;
+      left: 0;
+    }
+
+    .form-box {
+      background: var(--white);
+      padding: 3rem;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 1rem;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+
+    footer {
+      background: var(--primary);
+      color: var(--white);
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .social-links {
+      margin: 1rem 0;
+    }
+
+    .social-links a {
+      color: var(--white);
+      font-size: 1.5rem;
+      margin: 0 1rem;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: var(--secondary);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      
+      section {
+        padding: 3rem 1rem;
+      }
+      
+      .form-box {
+        padding: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="hero-content">
+      <h1>Camping Nigeria</h1>
+      <p>Unforgettable outdoor adventures and gear rentals across Nigeria – made easy.</p>
+      <button class="cta">Join the Next Adventure</button>
+    </div>
+  </div>
+
+  <section>
+    <h2>Why Choose Us?</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3><i class="fas fa-campground"></i> Gear Rentals</h3>
+        <p>Top-quality camping gear delivered when and where you need it. No hassle. No stress.</p>
+      </div>
+      <div class="feature-card">
+        <h3><i class="fas fa-calendar-alt"></i> Curated Events</h3>
+        <p>Join hikes, camps, biking trips, and weekend escapes planned for connection and fun.</p>
+      </div>
+      <div class="feature-card">
+        <h3><i class="fas fa-building"></i> Corporate Packages</h3>
+        <p>Tailored team-building adventures that leave lasting impressions. Logistics handled for you.</p>
+      </div>
+      <div class="feature-card">
+        <h3><i class="fas fa-users"></i> Community Driven</h3>
+        <p>Be part of a growing outdoor community. Share stories, photos, and moments that matter.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Our Promise</h2>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto;">A full-service, stress-free outdoor experience where you just show up and everything else—gear, guides, meals, and logistics—is handled for you.</p>
+  </section>
+
+  <section>
+    <h2>What You Get</h2>
+    <ul class="deliverables-list">
+      <li>Premium camping gear delivered to you</li>
+      <li>All-inclusive events (meals, guides, activities)</li>
+      <li>Safe, scenic outdoor experiences</li>
+      <li>Pro photography + event after-movie</li>
+      <li>Optional branded team gear for businesses</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Our Guarantee</h2>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto;"><strong>If you don't have a blast, we'll refund you.</strong> That's how confident we are in your experience.</p>
+  </section>
+
+  <section>
+    <h2>Bonuses</h2>
+    <ul class="bonus-list">
+      <li>Free Adventure Starter Kit (bag, water bottle, flashlight)</li>
+      <li>Bring 5, Get 1 Free</li>
+      <li>VIP Membership – Priority access and discounts</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Limited Spots Available</h2>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto;">We accept only 30 individual spots and 10 corporate events monthly to ensure quality and personalization. Don't miss out!</p>
+  </section>
+
+  <section>
+    <h2>Let's Plan Your Experience</h2>
+    <form class="form-box">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@example.com" required />
+      </div>
+
+      <div class="form-group">
+        <label for="type">Type of Inquiry</label>
+        <input type="text" id="type" placeholder="e.g., Gear rental, Corporate Retreat, Event Registration" />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Tell us more..."></textarea>
+      </div>
+
+      <button class="cta" type="submit">Send Request</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Camping Nigeria. Adventure made simple.</p>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
+</body>
+</html> 
